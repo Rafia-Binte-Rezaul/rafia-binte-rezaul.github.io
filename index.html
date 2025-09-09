@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light"> <!-- switched to light theme -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafia Binte Rezaul — Portfolio</title>
+  <meta name="description" content="Portfolio of Rezaul Rafia Binte — Diploma in IT student seeking internship. Projects, skills, and live previews." />
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top nav-blur">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home">
+        <span class="avatar">R</span>
+        <span>Rafia<span class="text-info">.dev</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-sm btn-accent" href="#contact"><i class="bi bi-briefcase me-1"></i> Hire / Internship</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero py-5 py-lg-6 border-bottom">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" data-reveal>
+          <span class="brand-chip mb-3 d-inline-flex"><i class="bi bi-stars"></i>
+            Diploma in IT • Seeking Internship</span>
+          <h1 class="display-5 fw-800 lh-1 mb-3">
+            Hi, I’m
+            <span style="background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;">Rafia Binte Rezaul</span>
+          </h1>
+          <p class="lead text-secondary mb-4">
+            Creative, detail‑oriented developer with a passion for clean UI and smooth UX. I build full‑stack apps and mobile projects with modern web standards.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-accent btn-lg ring" href="#projects"><i class="bi bi-rocket-takeoff me-2"></i>Explore Projects</a>
+            <a class="btn btn-outline-light btn-lg ring" href="mailto:rafiabinterezaul7@gmail.com"><i class="bi bi-envelope me-2"></i>Email Me</a>
+            <a class="btn btn-outline-info btn-lg ring" href="../resume.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text me-2"></i>Download CV</a>
+          </div>
+          <div class="mt-4 small text-secondary">Kuala Lumpur, Malaysia • Open to internship</div>
+        </div>
+        <div class="col-lg-5" data-reveal>
+          <div class="card card-glass p-4 shadow-accent">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-award fs-2 text-info"></i>
+              <div>
+                <div class="fw-bold">Achievements</div>
+                <div class="text-secondary">4.0 GPA in all programming courses • 6+ individual projects</div>
+              </div>
+            </div>
+            <ul class="soft-list ps-3 mb-0">
+              <li><i class="bi bi-dot text-info"></i> Strong UI/UX sense with Bootstrap and modern CSS</li>
+              <li><i class="bi bi-dot text-info"></i> Full‑stack apps with PHP & MySQL</li>
+              <li><i class="bi bi-dot text-info"></i> Mobile projects (Kotlin / Android)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <section class="py-5" id="projects">
+    <div class="projects-container">
+      <div class="row align-items-end mb-3">
+        <div class="col">
+          <div class="eyebrow">WORK</div>
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+        <div class="col-auto">
+          <a class="link-fancy text-info" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener">
+            <i class="bi bi-github me-1"></i> See all on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <!-- Repeat for each project -->
+        <div class="col-xl-4 col-lg-4 col-md-6" data-reveal>
+          <article class="card projcard h-100">
+            <figure class="projcard-figure">
+              <img src="skinith.png" alt="Skinith Website screenshot" class="projcard-img" loading="lazy" decoding="async">
+              <button class="projcard-view" data-bs-toggle="modal" data-bs-target="#lightbox"
+                      data-img="skinith.png" data-title="Skinith Website">
+                <i class="bi bi-search"></i><span>View</span>
+              </button>
+            </figure>
+            <div class="projcard-body">
+              <h3 class="projcard-title">Skinith Website</h3>
+              <p class="projcard-desc">Modern aesthetic clinic site with appointment booking, dynamic slots, and email notifications.</p>
+              <div class="projcard-tech">
+                <span class="tech tech-php">PHP</span>
+                <span class="tech tech-mysql">MySQL</span>
+                <span class="tech tech-bootstrap">Bootstrap</span>
+                <span class="tech tech-js">JS</span>
+              </div>
+              <ul class="projcard-bullets">
+                <li>Online booking with dynamic time slots</li>
+                <li>SMTP email confirmations & reminders</li>
+              </ul>
+              <div class="projcard-cta">
+                <a class="btn btn-contrast w-100" href="http://skinith.infinityfree.me/" target="_blank" rel="noopener">
+                  <i class="bi bi-box-arrow-up-right me-1"></i> View Details
+                </a>
+                <div class="projcard-icons">
+                  <a class="btn btn-ghost" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener" aria-label="Code">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- IT Club -->
+        <div class="col-xl-4 col-lg-4 col-md-6" data-reveal>
+          <article class="card projcard h-100">
+            <figure class="projcard-figure">
+              <img src="IT%20Club.png" alt="IT Club Website screenshot" class="projcard-img" loading="lazy" decoding="async">
+              <button class="projcard-view" data-bs-toggle="modal" data-bs-target="#lightbox"
+                      data-img="IT%20Club.png" data-title="IT Club Website">
+                <i class="bi bi-search"></i><span>View</span>
+              </button>
+            </figure>
+            <div class="projcard-body">
+              <h3 class="projcard-title">IT Club Website</h3>
+              <p class="projcard-desc">Responsive multi‑page site with member highlights and a join‑us form.</p>
+              <div class="projcard-tech">
+                <span class="tech tech-html">HTML</span>
+                <span class="tech tech-css">CSS</span>
+                <span class="tech tech-js">JavaScript</span>
+              </div>
+              <ul class="projcard-bullets">
+                <li>Clean sections with hero & carousel</li>
+                <li>Join form with validation</li>
+              </ul>
+              <div class="projcard-cta">
+                <a class="btn btn-contrast w-100" href="https://rafia-binte-rezaul.github.io/IT-Club/index.html" target="_blank" rel="noopener">
+                  <i class="bi bi-box-arrow-up-right me-1"></i> View Details
+                </a>
+                <div class="projcard-icons">
+                  <a class="btn btn-ghost" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener" aria-label="Code">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Doctor Appointment System -->
+        <div class="col-xl-4 col-lg-4 col-md-6" data-reveal>
+          <article class="card projcard h-100">
+            <figure class="projcard-figure">
+              <img src="php.png" alt="Doctor Appointment System screenshot" class="projcard-img" loading="lazy" decoding="async">
+              <button class="projcard-view" data-bs-toggle="modal" data-bs-target="#lightbox"
+                      data-img="php.png" data-title="Doctor Appointment System">
+                <i class="bi bi-search"></i><span>View</span>
+              </button>
+            </figure>
+            <div class="projcard-body">
+              <h3 class="projcard-title">Doctor Appointment System</h3>
+              <p class="projcard-desc">Full‑stack booking system with authentication and SMTP notifications.</p>
+              <div class="projcard-tech">
+                <span class="tech tech-php">PHP</span>
+                <span class="tech tech-mysql">MySQL</span>
+                <span class="tech tech-smtp">SMTP</span>
+              </div>
+              <ul class="projcard-bullets">
+                <li>Patient & admin dashboards</li>
+                <li>Secure booking workflow</li>
+              </ul>
+              <div class="projcard-cta">
+                <a class="btn btn-contrast w-100" href="http://fancyclinic.infinityfree.me/" target="_blank" rel="noopener">
+                  <i class="bi bi-code-slash me-1"></i> Preview
+                </a>
+                <div class="projcard-icons">
+                  <a class="btn btn-ghost" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Advanced Calculator (Web) -->
+        <div class="col-xl-4 col-lg-4 col-md-6" data-reveal>
+          <article class="card projcard h-100">
+            <figure class="projcard-figure">
+              <img src="calculator.png" alt="Advanced Calculator screenshot" class="projcard-img" loading="lazy" decoding="async">
+              <button class="projcard-view" data-bs-toggle="modal" data-bs-target="#lightbox"
+                      data-img="calculator.png" data-title="Advanced Calculator (Web)">
+                <i class="bi bi-search"></i><span>View</span>
+              </button>
+            </figure>
+            <div class="projcard-body">
+              <h3 class="projcard-title">Advanced Calculator</h3>
+              <p class="projcard-desc">A stylish scientific calculator built with HTML, CSS, and JavaScript.</p>
+              <div class="projcard-tech">
+                <span class="tech tech-html">HTML</span>
+                <span class="tech tech-css">CSS</span>
+                <span class="tech tech-js">JavaScript</span>
+              </div>
+              <ul class="projcard-bullets">
+                <li>Neumorphism-inspired UI</li>
+                <li>Keyboard support & advanced operations</li>
+              </ul>
+              <div class="projcard-cta">
+                <a class="btn btn-contrast w-100" href="https://rafia-binte-rezaul.github.io/Advanced-Calculator/" target="_blank" rel="noopener">
+                  <i class="bi bi-box-arrow-up-right me-1"></i> Preview
+                </a>
+                <div class="projcard-icons">
+                  <a class="btn btn-ghost" href="https://github.com/Rafia-Binte-Rezaul/Neumorphism-Calculator" target="_blank" rel="noopener" aria-label="Code">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Inventory Management (Java) -->
+        <div class="col-xl-4 col-lg-4 col-md-6" data-reveal>
+          <article class="card projcard h-100">
+            <figure class="projcard-figure">
+              <img src="java.png" alt="Inventory Management Java screenshot" class="projcard-img" loading="lazy" decoding="async">
+              <button class="projcard-view" data-bs-toggle="modal" data-bs-target="#lightbox"
+                      data-img="java.png" data-title="Inventory Management (Java)">
+                <i class="bi bi-search"></i><span>View</span>
+              </button>
+            </figure>
+            <div class="projcard-body">
+              <h3 class="projcard-title">Inventory Management (Java)</h3>
+              <p class="projcard-desc">Desktop app for item tracking and stock updates with clean UI.</p>
+              <div class="projcard-tech">
+                <span class="tech tech-java">Java</span>
+                <span class="tech tech-swing">Swing</span>
+              </div>
+              <ul class="projcard-bullets">
+                <li>Login & role-based features</li>
+                <li>CRUD operations with validation</li>
+              </ul>
+              <div class="projcard-cta">
+                <a class="btn btn-contrast w-100" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener">
+                  <i class="bi bi-code-slash me-1"></i> View Code
+                </a>
+                <div class="projcard-icons">
+                  <a class="btn btn-ghost" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Notes App (Kotlin) -->
+        <div class="col-xl-4 col-lg-4 col-md-6" data-reveal>
+          <article class="card projcard h-100">
+            <figure class="projcard-figure">
+              <img src="android.png" alt="Notes App Kotlin screenshot" class="projcard-img" loading="lazy" decoding="async">
+              <button class="projcard-view" data-bs-toggle="modal" data-bs-target="#lightbox"
+                      data-img="android.png" data-title="Notes App (Kotlin)">
+                <i class="bi bi-search"></i><span>View</span>
+              </button>
+            </figure>
+            <div class="projcard-body">
+              <h3 class="projcard-title">Notes App (Kotlin)</h3>
+              <p class="projcard-desc">Android notes app with categories and search.</p>
+              <div class="projcard-tech">
+                <span class="tech tech-kotlin">Kotlin</span>
+                <span class "tech tech-android">Android</span>
+              </div>
+              <ul class="projcard-bullets">
+                <li>Compose‑ready clean UI</li>
+                <li>Local storage & search</li>
+              </ul>
+              <div class="projcard-cta">
+                <a class="btn btn-contrast w-100" href="https://github.com/Rafia-Binte-Rezaul/TheNotesApp" target="_blank" rel="noopener">
+                  <i class="bi bi-code-slash me-1"></i> View Code
+                </a>
+                <div class="projcard-icons">
+                  <a class="btn btn-ghost" href="https://github.com/Rafia-Binte-Rezaul/TheNotesApp" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- University Management (C#) -->
+        <div class="col-xl-4 col-lg-4 col-md-6" data-reveal>
+          <article class="card projcard h-100">
+            <figure class="projcard-figure">
+              <img src="window.png" alt="University Management C# screenshot" class="projcard-img" loading="lazy" decoding="async">
+              <button class="projcard-view" data-bs-toggle="modal" data-bs-target="#lightbox"
+                      data-img="window.png" data-title="University Management (C#)">
+                <i class="bi bi-search"></i><span>View</span>
+              </button>
+            </figure>
+            <div class="projcard-body">
+              <h3 class="projcard-title">University Management (C#)</h3>
+              <p class="projcard-desc">CRUD desktop app for student & course management.</p>
+              <div class="projcard-tech">
+                <span class="tech tech-csharp">C#</span>
+                <span class="tech tech-winforms">WinForms</span>
+              </div>
+              <ul class="projcard-bullets">
+                <li>Login & user roles</li>
+                <li>Student/course CRUD</li>
+              </ul>
+              <div class="projcard-cta">
+                <a class="btn btn-contrast w-100" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener">
+                  <i class="bi bi-code-slash me-1"></i> View Code
+                </a>
+                <div class="projcard-icons">
+                  <a class="btn btn-ghost" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Join-Us Registration Form -->
+        <div class="col-xl-4 col-lg-4 col-md-6" data-reveal>
+          <article class="card projcard h-100">
+            <figure class="projcard-figure">
+              <img src="Registration%20Form.png" alt="Join‑Us Registration Form screenshot" class="projcard-img" loading="lazy" decoding="async">
+              <button class="projcard-view" data-bs-toggle="modal" data-bs-target="#lightbox"
+                      data-img="Registration%20Form.png" data-title="Join‑Us Registration Form">
+                <i class="bi bi-search"></i><span>View</span>
+              </button>
+            </figure>
+            <div class="projcard-body">
+              <h3 class="projcard-title">Join‑Us Registration Form</h3>
+              <p class="projcard-desc">Glassmorphism form with validation and responsive layout.</p>
+              <div class="projcard-tech">
+                <span class="tech tech-html">HTML</span>
+                <span class="tech tech-css">CSS</span>
+                <span class="tech tech-js">JavaScript</span>
+              </div>
+              <ul class="projcard-bullets">
+                <li>Accessible inputs & checks</li>
+                <li>Responsive, mobile‑first</li>
+              </ul>
+              <div class="projcard-cta">
+                <a class="btn btn-contrast w-100" href="https://rafia-binte-rezaul.github.io/Join-Us-Form/index.html" target="_blank" rel="noopener">
+                  <i class="bi bi-code-slash me-1"></i> Preview
+                </a>
+                <div class="projcard-icons">
+                  <a class="btn btn-ghost" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div> <!-- /row -->
+    </div> <!-- /projects-container -->
+  </section>
+
+  <!-- SKILLS -->
+  <section class="py-5" id="skills">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-6" data-reveal>
+          <div class="eyebrow">STACK</div>
+          <h2 class="section-title">Skills</h2>
+          <div class="mt-3 d-flex flex-wrap gap-2">
+            <span class="badge rounded-pill badge-skill">HTML</span>
+            <span class="badge rounded-pill badge-skill">CSS</span>
+            <span class="badge rounded-pill badge-skill">JavaScript</span>
+            <span class="badge rounded-pill badge-skill">Bootstrap</span>
+            <span class="badge rounded-pill badge-skill">PHP</span>
+            <span class="badge rounded-pill badge-skill">MySQL</span>
+            <span class="badge rounded-pill badge-skill">Java</span>
+            <span class="badge rounded-pill badge-skill">C++</span>
+            <span class="badge rounded-pill badge-skill">C#</span>
+            <span class="badge rounded-pill badge-skill">Kotlin</span>
+          </div>
+        </div>
+        <div class="col-lg-6" data-reveal>
+          <div class="card card-glass p-4 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-person-vcard text-info"></i><strong>Profile</strong>
+            </div>
+            <p class="mb-2 text-secondary">
+              Creative and detail-oriented full‑stack developer with a passion for design and user experience. Experienced in leading team‑based assignments and delivering clean, maintainable code.
+            </p>
+            <ul class="soft-list ps-3 mb-0">
+              <li><i class="bi bi-dot text-info"></i> Frontend: HTML, CSS, JS, Bootstrap</li>
+              <li><i class="bi bi-dot text-info"></i> Backend: PHP, MySQL; Desktop & Mobile: Java, C++, C#, Kotlin</li>
+              <li><i class="bi bi-dot text-info"></i> Tools: VS / Android Studio, XAMPP, GitHub, NetBeans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="py-5 border-top" id="education">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-7" data-reveal>
+          <div class="eyebrow">ACADEMICS</div>
+          <h2 class="section-title">Education</h2>
+          <div class="card card-glass p-4 mt-3">
+            <div class="d-flex justify-content-between flex-wrap gap-2">
+              <div>
+                <div class="fw-bold">Diploma in Information Technology</div>
+                <div class="text-secondary">SEGi College Kuala Lumpur • 2024 – Present • CGPA 3.72</div>
+              </div>
+              <span class="badge text-bg-secondary">Kuala Lumpur, MY</span>
+            </div>
+          </div>
+          <div class="card card-glass p-4 mt-3">
+            <div class="fw-bold">GCE O‑Level</div>
+            <div class="text-secondary">Green Gems International School • Dhaka, Bangladesh • 5 A</div>
+          </div>
+        </div>
+        <div class="col-lg-5" data-reveal>
+          <div class="card card-glass p-4 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-translate text-info"></i><strong>Languages</strong></div>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill badge-skill">English</span>
+              <span class="badge rounded-pill badge-skill">Bengali</span>
+              <span class="badge rounded-pill badge-skill">Arabic</span>
+            </div>
+            <hr class="my-4" />
+            <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-trophy text-info"></i><strong>Highlights</strong></div>
+            <ul class="soft-list ps-3 mb-0">
+              <li><i class="bi bi-dot text-info"></i> 4.0 GPA in all programming courses</li>
+              <li><i class="bi bi-dot text-info"></i> Built 6+ individual full‑stack & mobile projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6" data-reveal>
+          <div class="eyebrow">CONNECT</div>
+          <h2 class="section-title">Let’s work together</h2>
+          <p class="text-secondary">
+            I’m ready for an internship where I can contribute, learn fast, and build real products. Reach me anytime:
+          </p>
+          <div class="d-grid gap-2">
+            <a class="btn btn-lg btn-accent ring" href="mailto:rafiabinterezaul7@gmail.com"><i class="bi bi-envelope me-2"></i> rafiabinterezaul7@gmail.com</a>
+            <a class="btn btn-lg btn-outline-light ring" href="tel:+601133179934"><i class="bi bi-telephone me-2"></i> +60 11 3317 9934</a>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <a class="btn btn-outline-info" href="https://github.com/Rafia-Binte-Rezaul" target="_blank" rel="noopener"><i class="bi bi-github me-2"></i>GitHub</a>
+              <a class="btn btn-outline-info" href="https://www.linkedin.com/in/rafia-binte-rezaul/" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+              <a class="btn btn-outline-info" href="../resume.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text me-2"></i>Resume (PDF)</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-reveal>
+          <div class="card card-glass p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-geo-alt text-info fs-3"></i>
+              <div>
+                <div class="fw-bold">Kuala Lumpur, Malaysia</div>
+                <div class="text-secondary">Available for on-site or remote internship</div>
+              </div>
+            </div>
+            <div class="ratio ratio-16x9 project-thumb">
+              <iframe title="Map" src="https://www.openstreetmap.org/export/embed.html?bbox=101.65%2C3.05%2C101.80%2C3.20&amp;layer=mapnik" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4 mt-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="small text-secondary">© <span id="y"></span> Rafia Binte Rezaul</div>
+      <div class="small text-secondary">
+        Built with
+        <span class="text-info">HTML</span>,
+        <span class="text-info">CSS</span>,
+        <span class="text-info">JavaScript</span>
+        &amp;
+        <span class="text-info">Bootstrap</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="modal fade modal-dark" id="lightbox" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content p-2">
+        <div class="d-flex justify-content-between align-items-center px-2 pt-2">
+          <h6 class="m-0" id="lightboxTitle"></h6>
+          <button type="button" class="btn btn-sm btn-outline-light" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          <img id="lightboxImg" class="lightbox-img" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Update copyright year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Reveal elements on scroll
+    const revealEls = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('revealed'); io.unobserve(e.target); } });
+    }, { threshold:.12 });
+    revealEls.forEach(el=>io.observe(el));
+
+    // Lightbox wiring
+    const lightbox = document.getElementById('lightbox');
+    lightbox.addEventListener('show.bs.modal', function (evt) {
+      const btn = evt.relatedTarget;
+      const src = btn?.getAttribute('data-img');
+      const title = btn?.getAttribute('data-title') || '';
+      const imgEl = document.getElementById('lightboxImg');
+      const titleEl = document.getElementById('lightboxTitle');
+      if (src) imgEl.src = src;
+      imgEl.alt = title + ' — full preview';
+      titleEl.textContent = title;
+    });
+  </script>
+  
+</body>
+</html>

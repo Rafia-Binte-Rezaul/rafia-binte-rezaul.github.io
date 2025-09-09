@@ -1,0 +1,399 @@
+/* ---------------------------------------------------------
+   Design tokens for light theme
+--------------------------------------------------------- */
+:root {
+  --ink: #0b1225;        /* primary text */
+  --muted: #6b7280;      /* secondary text */
+  --bg: #f6f8fb;         /* background */
+  --panel: #ffffff;      /* cards / surfaces */
+  --stroke: #e6ecf3;     /* borders */
+  --primary: #0ea5e9;    /* blue-cyan */
+  --accent: #22d3ee;     /* cyan */
+  --success: #16a34a;    /* green (buttons) */
+  --ring: rgba(14,165,233,.35);
+}
+
+/* ---------------------------------------------------------
+   Global base styles
+--------------------------------------------------------- */
+body {
+  background:
+    radial-gradient(52rem 28rem at 8% -10%, #bfe5ff33, transparent 40%),
+    radial-gradient(48rem 26rem at 95% -10%, #bfece133, transparent 45%),
+    var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0284c7;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--ring);
+  border-radius: 8px;
+}
+
+/* ---------------------------------------------------------
+   Navbar & avatar
+--------------------------------------------------------- */
+.nav-blur {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.88);
+  border-bottom: 1px solid var(--stroke);
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: #062b20;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: 0 8px 18px rgba(14,165,233,.2);
+}
+
+/* ---------------------------------------------------------
+   Hero & chips
+--------------------------------------------------------- */
+.hero {
+  background:
+    radial-gradient(60rem 34rem at 10% -10%, #c2f0ff44, transparent 40%),
+    radial-gradient(50rem 30rem at 95% 10%, #bfece144, transparent 45%),
+    var(--bg);
+}
+
+.brand-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  background: #e8f7ff;
+  border: 1px solid #d8effa;
+  color: #065986;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   Generic “glass” cards used in Achievements, Skills, Education, Contact
+--------------------------------------------------------- */
+.card-glass {
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15,23,42,.06);
+}
+
+/* ---------------------------------------------------------
+   Badges, lists, typography tweaks
+--------------------------------------------------------- */
+.badge-skill {
+  border: 1px solid #dbe2ec;
+  background: #f5f8fb;
+  color: #334155;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.soft-list li {
+  margin-bottom: .4rem;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------
+   Section headings
+--------------------------------------------------------- */
+.eyebrow {
+  letter-spacing: .18em;
+  font-size: .78rem;
+  color: #0083c2;
+  font-weight: 800;
+}
+
+.section-title {
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: var(--ink);
+}
+
+/* ---------------------------------------------------------
+   Project cards — full grid (light theme)
+--------------------------------------------------------- */
+.projects-container {
+  max-width: 1320px;
+  margin-inline: auto;
+}
+
+.projcard {
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(15,23,42,.08);
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.projcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15,23,42,.15);
+}
+
+.projcard-figure {
+  position: relative;
+  background: #f5f8fc;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.projcard-img {
+  width: 100%;
+  height: clamp(160px, 18vw, 200px);
+  object-fit: contain;
+  display: block;
+}
+
+.projcard-view {
+  position: absolute;
+  inset: auto 12px 12px auto;
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .5rem .75rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.95);
+  color: var(--ink);
+  border: 1px solid #dbeafe;
+  font-weight: 700;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: .25s ease;
+}
+
+.projcard-view i {
+  color: var(--primary);
+}
+
+.projcard-figure:hover .projcard-view {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 10px 20px rgba(14,165,233,.12);
+}
+
+.projcard-body {
+  padding: 1.1rem 1.25rem 1.25rem;
+}
+
+.projcard-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: .45rem;
+  color: var(--ink);
+}
+
+.projcard-desc {
+  color: var(--muted);
+  margin-bottom: .8rem;
+}
+
+.projcard-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-bottom: .85rem;
+}
+
+.tech {
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: 700;
+  border: 1px solid #dfe7f0;
+  background: #f1f5f9;
+  color: var(--ink);
+}
+
+/* Pastel brand colors for languages */
+.tech-html     { background: #ffe9e4; border-color:#ffd9d3; color:#b91c1c; }
+.tech-css      { background: #e6f3ff; border-color:#cfe5fe; color:#0369a1; }
+.tech-js       { background: #fff8c2; border-color:#fef2a8; color:#854d0e; }
+.tech-php      { background: #f1e8ff; border-color:#e5d7ff; color:#5a4fcf; }
+.tech-mysql    { background: #fef4da; border-color:#fde9c7; color:#b55708; }
+.tech-bootstrap{ background: #f2ecff; border-color:#e5dbff; color:#6d28d9; }
+.tech-smtp     { background: #e9fce3; border-color:#d8f9cd; color:#3c5c13; }
+.tech-java     { background: #fff2e7; border-color:#ffe0c9; color:#b1500f; }
+.tech-swing    { background: #fff9e6; border-color:#fff0c7; color:#a86a08; }
+.tech-kotlin   { background: #f4e8ff; border-color:#e5d4ff; color:#7c3aed; }
+.tech-android  { background: #e9fce9; border-color:#d0f9d0; color:#056f26; }
+.tech-csharp   { background: #e8f3ff; border-color:#d4e8ff; color:#145ea8; }
+.tech-winforms { background: #f7fafe; border-color:#ebf2fa; color:#3d4f68; }
+
+/* Bullet points */
+.projcard-bullets {
+  margin: 0 0 1rem 1.1rem;
+  color: var(--muted);
+}
+
+.projcard-bullets li {
+  margin: .35rem 0;
+  list-style: none;
+  position: relative;
+}
+
+.projcard-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: -1.1rem;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+/* CTA area */
+.projcard-cta {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-top: .5rem;
+}
+
+.projcard-cta .w-100 {
+  flex: 1;
+}
+
+/* High-contrast (but soft) CTA button */
+.btn-contrast {
+  background: linear-gradient(90deg, #bfe3ff, #d8f7e2);
+  color: #003e52;
+  border: none;
+  box-shadow: 0 10px 22px rgba(191,227,255,.25);
+  font-weight: 800;
+  border-radius: 12px;
+}
+
+.btn-contrast:hover {
+  filter: brightness(1.03);
+  box-shadow: 0 14px 26px rgba(191,227,255,.35);
+}
+
+/* Ghost icon buttons */
+.btn-ghost {
+  border: 1px solid var(--stroke);
+  background: #f5f7fb;
+  color: var(--muted);
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.btn-ghost:hover {
+  background: #eef2f6;
+  color: var(--ink);
+}
+
+/* Utilities for icon cluster */
+.projcard-icons {
+  display: flex;
+  gap: .5rem;
+}
+
+/* Lightbox (updated colours) */
+.modal-dark .modal-content {
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  box-shadow: 0 12px 34px rgba(15,23,42,.12);
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  background: var(--bg);
+  border-radius: 12px;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 575.98px) {
+  .projcard-img { height: 180px; }
+  .projcard-title { font-size: 1rem; }
+}
+
+/* =======================
+   EveAI-inspired Mix
+======================= */
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #ffe5f1 0%, #f4e8ff 50%, #e0f7ff 100%);
+}
+
+/* Hero Gradient Text */
+.hero h1 span {
+  background: linear-gradient(90deg, #ff6db6, #a770ef, #20e3b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section titles with accents */
+.section-title {
+  font-weight: 800;
+  color: #1a1a1a;
+}
+.section-title::after {
+  content: " ✨";
+  color: #ff6db6;
+}
+
+/* Gradient Button */
+.btn-accent {
+  background: linear-gradient(90deg, #ff9ac4, #a770ef);
+  border: none;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(167,112,239,0.25);
+  transition: 0.25s ease;
+}
+.btn-accent:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 8px 26px rgba(167,112,239,0.35);
+}
+
+/* Glassmorphism Cards with Glow */
+.card-glass, .projcard {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(255, 145, 200, 0.15);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card-glass:hover, .projcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(255, 145, 200, 0.25);
+}
+
+/* Subtle gradient border */
+.projcard {
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(135deg, #ff9ac4, #a770ef, #20e3b2);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* Section Background fade */
+section {
+  background: linear-gradient(to bottom, #ffffff, #fef6fb, #f3ecff, #e9faff);
+}
+
