@@ -273,7 +273,7 @@ a:hover {
 .projcard-img {
   width: 100%;
   height: clamp(160px, 18vw, 200px);
-  object-fit: cover;
+  object-fit: fill;
   display: block;
 }
 
