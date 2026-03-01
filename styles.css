@@ -487,3 +487,10 @@ body {
 section {
   background: linear-gradient(to bottom, #ffffff, #fef6fb, #f3ecff, #e9faff);
 }
+
+.projects-container {
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
